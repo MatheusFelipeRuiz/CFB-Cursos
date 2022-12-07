@@ -1,7 +1,7 @@
 # CFB Cursos
 
-![](src/print-page-1.png)
-![](src/print-page-2.png)
+![](Assets/img/print-page-1.jpg)
+![](Assets/img/print-page-2.jpg)
 
 ## :memo: Descrição do Projeto
 
