@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title>Projeto Final</title>
+    <style>
+        .container-principal {
+            display:flex;
+        }
+
+        #container-esquerda {
+            width: 55vw;
+        }
+
+        #container-direita {
+            width: 35vw;
+        }
+
+        @media  all and (min-width:300px) and (max-width:500px) {
+            .container-principal {
+                flex-wrap:wrap;
+            }
+            
+            #container-esquerda {
+                width: 80vw;
+            }
+
+            #container-direita {
+                width:60vw;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar  pb-0 bg-primary">
+        <div class="container-fluid text-white d-flex align-items-center justify-content-around">
+            <img class="img-fluid" src="Assets/img/logo-cfb-cursos.png" alt="Logo CFB Cursos">
+            <h1 class="text-center">Modelo de Site de BootStrap</h1>
+        </div>
+
+        <div class="container-fluid d-flex justify-content-start navbar-expand" style="background-Color: rgb(7, 7, 136);">
+            <ul class="navbar-nav nav-justified  ">
+                <li class="nav-item mx-2 fs-4" style="cursor:pointer;"><a href="##" class="nav-link btn 
+                 text-white">Home</a></li>
+                <li class="nav-item mx-2 fs-4" style="cursor:pointer;"><a href="##" class="nav-link btn text-white">Cursos</a></li>
+                <li class="nav-item mx-2 fs-4" style="cursor:pointer;"><a href="##" class="nav-link btn text-white">Arquivos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-principal">
+
+        <div id="container-esquerda" class="container-fluid d-flex flex-wrap  ms-5">
+
+            <div class=" container-pequeno container-fluid p-2 rounded my-3 " style=" background-color:rgb(151, 147, 147);">
+                <h2>Título do Conteúdo</h2>
+                <h3 class="fs-4">Descrição do conteúdo</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, eaque alias? Commodi libero dolorum ipsa, nihil laboriosam officiis cum provident nam incidunt fugiat dolores alias ullam, reprehenderit ex atque eum non. Ratione saepe veniam quo consequatur nobis corporis, dolor blanditiis inventore sunt molestias rem a voluptas debitis accusamus dolorum deserunt aut tenetur itaque natus laboriosam, reprehenderit ex nihil! Sed voluptas numquam minus dolores maxime voluptatem porro quod est, debitis molestiae magnam nesciunt quos odit et pariatur. Commodi incidunt ipsam vitae unde et ea esse modi quisquam totam quo natus iure quas eligendi perferendis impedit corrupti mollitia dicta, magni sint! Nisi?</p>
+            </div>
+            
+            <div class="container-pequeno p-2 rounded my-3 " style=" background-color:rgb(151, 147, 147);">
+                <h2>Título do Conteúdo</h2>
+                <h3 class="fs-4">Descrição do conteúdo</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, eaque alias? Commodi libero dolorum ipsa, nihil laboriosam officiis cum provident nam incidunt fugiat dolores alias ullam, reprehenderit ex atque eum non. Ratione saepe veniam quo consequatur nobis corporis, dolor blanditiis inventore sunt molestias rem a voluptas debitis accusamus dolorum deserunt aut tenetur itaque natus laboriosam, reprehenderit ex nihil! Sed voluptas numquam minus dolores maxime voluptatem porro quod est, debitis molestiae magnam nesciunt quos odit et pariatur. Commodi incidunt ipsam vitae unde et ea esse modi quisquam totam quo natus iure quas eligendi perferendis impedit corrupti mollitia dicta, magni sint! Nisi?</p>
+            </div>
+        </div>
+
+        <div id="container-direita" class="container-fluid mt-5 ">
+
+            <div class="container-fluid ">
+                <h2>Sobre</h2>
+                <h3 class="fs-4">Sobre o CFB</h3>
+                <p class="fs-5">Somos um canal do Youtube voltado para cursos de programação em geral</p>
+            </div>
+
+            <div class="list-group container-fluid">
+                <h2 class="text-center">Alguns cursos</h2>
+                <a href="" class="list-group-item text-center fs-5 list-group-item-action rounded active"> BootStrap</a>
+                <a href="" class="list-group-item text-center fs-5 list-group-item-action rounded"> JavaScript</a>
+                <a href="" class="list-group-item text-center fs-5 list-group-item-action rounded"> C++</a>
+                <a href="" class="list-group-item text-center fs-5 list-group-item-action rounded">Python</a>
+                <a href="" class="list-group-item text-center fs-5 list-group-item-action rounded">Pascal</a>
+                <a href="" class="list-group-item text-center fs-5 list-group-item-action rounded">Java</a>
+                <a href="" class="list-group-item text-center fs-5 list-group-item-action rounded">React</a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer class=" py-2 card-footer text-center fs-5 bg-dark text-white">&copy; Criado e desenvolvido por <a class="text-white" href="https://www.linkedin.com/in/matheus-felipe-ruiz-gonçalves-ti/" target="_blank">Matheus Ruiz</a></footer>
+</body>
+</html>
