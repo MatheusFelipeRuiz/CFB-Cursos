@@ -81,13 +81,13 @@
 
             <div class="list-group container-fluid">
                 <h2 class="text-center">Alguns cursos</h2>
-                <a href="" class="list-group-item text-center fs-5 list-group-item-action rounded active"> BootStrap</a>
-                <a href="" class="list-group-item text-center fs-5 list-group-item-action rounded"> JavaScript</a>
-                <a href="" class="list-group-item text-center fs-5 list-group-item-action rounded"> C++</a>
-                <a href="" class="list-group-item text-center fs-5 list-group-item-action rounded">Python</a>
-                <a href="" class="list-group-item text-center fs-5 list-group-item-action rounded">Pascal</a>
-                <a href="" class="list-group-item text-center fs-5 list-group-item-action rounded">Java</a>
-                <a href="" class="list-group-item text-center fs-5 list-group-item-action rounded">React</a>
+                <a href="#" onclick="trocarActive(this)" class="list-group-item text-center fs-5 list-group-item-action rounded active"> BootStrap</a>
+                <a href="#" onclick="trocarActive(this)" class="list-group-item text-center fs-5 list-group-item-action rounded"> JavaScript</a>
+                <a href="#" onclick="trocarActive(this)" class="list-group-item text-center fs-5 list-group-item-action rounded"> C++</a>
+                <a href="#" onclick="trocarActive(this)" class="list-group-item text-center fs-5 list-group-item-action rounded">Python</a>
+                <a href="#" onclick="trocarActive(this)" class="list-group-item text-center fs-5 list-group-item-action rounded">Pascal</a>
+                <a href="#" onclick="trocarActive(this)" class="list-group-item text-center fs-5 list-group-item-action rounded">Java</a>
+                <a href="#" onclick="trocarActive(this)" class="list-group-item text-center fs-5 list-group-item-action rounded">React</a>
 
             </div>
         </div>
@@ -95,5 +95,18 @@
     </div>
 
     <footer class=" py-2 card-footer text-center fs-5 bg-dark text-white">&copy; Criado e desenvolvido por <a class="text-white" href="https://www.linkedin.com/in/matheus-felipe-ruiz-gonçalves-ti/" target="_blank">Matheus Ruiz</a></footer>
+
+    <script>
+
+            const trocarActive = (element) => {
+            let itemsGroup = document.querySelectorAll(".list-group-item");
+            for(let i = 0; i < itemsGroup.length; i++) {
+                itemsGroup[i].classList.remove("active");
+            }
+            element.classList.add("active");
+            console.log(element)
+        }
+    </script>
+
 </body>
 </html>
